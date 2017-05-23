@@ -1,8 +1,115 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.samsung.protocolsmakerfree.home.HomeActivity">
+    tools:context="com.example.samsung.protocolsmakerfree.ui.activity.home.HomeActivity"
+    android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/llPrtcl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <!--suppress AndroidDomInspection -->
+        <EditText
+            android:id="@+id/etPrtclName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:textColor="#000"
+            android:textColorHint="#f0f"
+            android:textSize="24sp"
+            android:hint="@string/protocols_name"
+            android:layout_weight="8"/>
+
+        <!--suppress AndroidDomInspection -->
+        <Button
+            android:id="@+id/btnBrouse"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/brouse"
+            android:layout_weight="1"/>
+        <!--suppress AndroidDomInspection -->
+        <Button
+            android:id="@+id/btnInputName"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@android:drawable/ic_btn_speak_now"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbRecord"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="false"/>
+
+    <LinearLayout
+        android:id="@+id/llRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBtn"
+            android:drawableLeft="@android:drawable/ic_media_previous"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBtn"
+            android:drawableLeft="@android:drawable/ic_media_rew"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBtn"
+            android:drawableLeft="@android:drawable/ic_btn_speak_now"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBtn"
+            android:drawableLeft="@android:drawable/ic_media_play"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBtn"
+            android:drawableLeft="@android:drawable/ic_media_pause"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBtn"
+            android:drawableRight="@android:drawable/ic_media_ff"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnInEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBtn"
+            android:drawableRight="@android:drawable/ic_media_next"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPrtcl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProtocolsMakerFree</string>
+    <string name="protocols_name">Protocols name</string>
+    <string name="brouse">...</string>
 </resources>
