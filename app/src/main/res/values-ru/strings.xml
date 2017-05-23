@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Протоколист</string>
+    <string name="enter_name_new_protocol">Ввод наименования нового протокола</string>
+    <string name="existing_rotocol">Выбор существующего протокола</string>
+    <string name="go_to_the_beginning">Переход в начало</string>
+    <string name="word_to_left">Переход на одно слово влево</string>
+    <string name="protocols_name">Наименование протокола</string>
+    <string name="record_with_mic">Производится запись с микрофона</string>
+    <string name="pause_recording">Пауза в воспроизведении записи</string>
+    <string name="playback_recording">Воспроизведение записи</string>
+    <string name="go_to_the_end">Переход в конец</string>
+    <string name="word_to_right">Переход на одно слово вправо</string>
+</resources>

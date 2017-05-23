@@ -29,6 +29,7 @@
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:text="@string/brouse"
+            android:onClick="onClickBtn"
             android:layout_weight="1"/>
         <!--suppress AndroidDomInspection -->
         <Button
@@ -36,6 +37,7 @@
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:drawableLeft="@android:drawable/ic_btn_speak_now"
+            android:onClick="onClickBtn"
             android:layout_weight="1"/>
 
     </LinearLayout>
@@ -110,6 +112,7 @@
         android:id="@+id/etPrtcl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
 
 </LinearLayout>

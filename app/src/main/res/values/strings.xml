@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">ProtocolsMakerFree</string>
     <string name="protocols_name">Protocols name</string>
-    <string name="brouse">...</string>
+    <string name="brouse" translatable="false">...</string>
+    <string name="existing_rotocol">Select an existing Protocol</string>
+    <string name="enter_name_new_protocol">Enter the name of the new Protocol</string>
+    <string name="go_to_the_beginning">Go to the beginning</string>
+    <string name="word_to_left">To move one word to the left</string>
+    <string name="record_with_mic">Record with MIC launched</string>
+    <string name="playback_recording">The playback of a recording</string>
+    <string name="pause_recording">The pause in the recording playback</string>
+    <string name="word_to_right">One word to the right</string>
+    <string name="go_to_the_end">Go to the end</string>
 </resources>
