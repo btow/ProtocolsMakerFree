@@ -12,6 +12,8 @@ import com.example.samsung.protocolsmakerfree.presentation.presenter.home.HomePr
 
 import com.arellomobile.mvp.presenter.InjectPresenter;
 
+import ru.yandex.speechkit.SpeechKit;
+
 public class HomeActivity extends MvpAppCompatActivity implements HomeView {
 
     public static final String TAG = "HomeActivity";
@@ -30,6 +32,8 @@ public class HomeActivity extends MvpAppCompatActivity implements HomeView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        SpeechKit.getInstance().configure(getBaseContext(), getString(R.string.api_kay));
     }
 
     public void onClickBtn(View view) {

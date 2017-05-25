@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.samsung.protocolsmakerfree", appContext.getPackageName());
+        assertEquals("com.example.samsung.recognizer", appContext.getPackageName());
     }
 }
